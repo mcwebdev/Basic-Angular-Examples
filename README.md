@@ -9,7 +9,7 @@ This bootstrap showcases the following
 * Components
 * Interfaces
 * Class
-* Web Worker
+* Web Workers
 * Router
 
 
