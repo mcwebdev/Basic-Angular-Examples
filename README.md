@@ -3,7 +3,7 @@ Basic Angular Examples with out all the redicousness that is angular documentati
 
 This bootstrap showcases the following
 
-Markup : * Pipe
+         * Pipe
          * Directives
 	 * Services
          * Components
