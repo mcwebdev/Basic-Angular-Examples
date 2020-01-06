@@ -3,14 +3,14 @@ Basic Angular Examples with out all the redicousness that is angular documentati
 
 This bootstrap showcases the following
 
-         * Pipe
-         * Directives
-	 * Services
-         * Components
-	 * Interfaces
-         * Class
-	 * Web Worker
-	 * Router
+* Pipe
+* Directives
+* Services
+* Components
+* Interfaces
+* Class
+* Web Worker
+* Router
 
 
 									
