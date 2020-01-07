@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { BasicsComponent } from './basics/basics.component';
 import { BasicPipe } from './shared//basic-pipe.pipe';
 import { BasicClass } from 'src/app/shared/basic-class';
-import { BasicDirectiveDirective } from './shared/basic-directive.directive';
+import { BasicDirective } from './shared/basic-directive.directive';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
@@ -15,7 +15,7 @@ import { environment } from '../environments/environment';
     AppComponent,
     BasicsComponent,
     BasicPipe,
-    BasicDirectiveDirective
+    BasicDirective
   ],
   imports: [
     BrowserModule,
