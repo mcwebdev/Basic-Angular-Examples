@@ -11,6 +11,7 @@ This bootstrap showcases the following
 * Class
 * Web Workers
 * Router
+* JSON
 
 
 									
