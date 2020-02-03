@@ -12,6 +12,7 @@ This bootstrap showcases the following
 * Web Workers
 * Router
 * JSON
+* RxJS
 
 
 									

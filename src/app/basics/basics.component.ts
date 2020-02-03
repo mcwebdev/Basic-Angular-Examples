@@ -1,4 +1,6 @@
 import { Component, OnInit, Injectable } from '@angular/core';
+import { of } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { BasicClass } from 'src/app/shared/basic-class';
 import { BasicDirective } from 'src/app/shared/basic.directive';
 import { BasicInterface } from 'src/app/shared/basic-interface';
@@ -34,7 +36,11 @@ export class BasicsComponent implements OnInit {
   }
 
   constructor(private http: HttpClient) {
-    
+    //rxjs example
+    const nums = of(1, 2, 3);
+    const squareValues = map((val: number) => val * val);
+    const squaredNums = squareValues(nums);
+    squaredNums.subscribe(x => console.log(x));
   }
 
   ngOnInit() {
