@@ -1,7 +1,8 @@
 # Basic-Angular-Examples
-Basic Angular Examples with out all the ridiculousness that is angular documentation. (see: https://hackernoon.com/why-angular-made-me-quit-web-dev-f63b83a157af )
+Basic Angular Examples with out all the ridiculousness that is angular documentation. 
+(see: https://hackernoon.com/why-angular-made-me-quit-web-dev-f63b83a157af )
 
-This bootstrap showcases the following
+This bootstrap showcases the following basic angular examples.
 
 * Pipes
 * Directives
@@ -13,6 +14,8 @@ This bootstrap showcases the following
 * Router
 * JSON
 * RxJS
+* HTTP
+* UI/UX Widget Library
 
 
 									
