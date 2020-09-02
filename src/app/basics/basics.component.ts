@@ -57,12 +57,6 @@ export class BasicsComponent implements OnInit {
       this.jsonDataArray = arrayData.results;
       console.log('data', this.jsonDataArray);
     })
-
-
-    this.http.get<any>('https://raw.githubusercontent.com/primefaces/primeng/master/src/assets/showcase/data/cars-small.json').subscribe(objectData => {
-      this.jsonDataObject = objectData.data;
-      console.log('data', this.jsonDataObject);
-    })
     
   }
 
