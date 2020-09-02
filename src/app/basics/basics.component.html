@@ -16,3 +16,41 @@
 
 
 <a href="#">link</a>
+
+
+<h3>Fetch Json data:Array</h3>
+<p-table [value]="jsonDataArray">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>Package</th>
+      <th>Score</th>
+      <th>Search Score</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-jsonDataArray>
+    <tr>
+      <td>{{jsonDataArray.package.name}}</td>
+      <td>{{jsonDataArray.score.final}}</td>
+      <td>{{jsonDataArray.searchScore}}</td>
+    </tr>
+  </ng-template>
+</p-table>
+
+
+<h3>Fetch Json data:Object</h3>
+<p-table [value]="jsonDataObject">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>Brand</th>
+      <th>Year</th>
+      <th>Color</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-jsonDataObject>
+    <tr>
+      <td>{{jsonDataObject.brand}}</td>
+      <td>{{jsonDataObject.year}}</td>
+      <td>{{jsonDataObject.color}}</td>
+    </tr>
+  </ng-template>
+</p-table>

@@ -6,7 +6,12 @@ import { BasicDirective } from 'src/app/shared/basic.directive';
 import { BasicInterface } from 'src/app/shared/basic-interface';
 import { BasicPipe } from 'src/app/shared/basic-pipe.pipe';
 import { BasicService } from 'src/app/shared/basic-service.service';
+
+//http
 import { HttpClient } from '@angular/common/http';
+import { Observable } from "rxjs/Observable";
+
+
 
 //loading json in angular is like pulling teeth. methodology changes in every release...
 //it even requires an entire wiki with a table of contents...
@@ -29,6 +34,12 @@ export class BasicsComponent implements OnInit {
   returnMybasicClassTextStringFunctionString: string;
   jsonData;
 
+  //remote json datatable array
+  jsonDataArray;
+
+  //remote json datatable object
+  jsonDataObject;
+
   basicI: BasicInterface = {
     id: 1,
     name: "Super Basic",
@@ -41,7 +52,20 @@ export class BasicsComponent implements OnInit {
     const squareValues = map((val: number) => val * val);
     const squaredNums = squareValues(nums);
     squaredNums.subscribe(x => console.log(x));
+
+    this.http.get<any>('https://api.npms.io/v2/search?q=scope:angular').subscribe(arrayData => {
+      this.jsonDataArray = arrayData.results;
+      console.log('data', this.jsonDataArray);
+    })
+
+
+    this.http.get<any>('https://raw.githubusercontent.com/primefaces/primeng/master/src/assets/showcase/data/cars-small.json').subscribe(objectData => {
+      this.jsonDataObject = objectData.data;
+      console.log('data', this.jsonDataObject);
+    })
+    
   }
+
 
   ngOnInit() {
     //Web Worker Example. Check console for message
